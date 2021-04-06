@@ -5,7 +5,13 @@ class HeadersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: HeaderWaves(),
+      body: Column(
+        children: [
+          Expanded(
+            child: HeaderPico(),
+          ),
+        ],
+      ),
     );
   }
 }
